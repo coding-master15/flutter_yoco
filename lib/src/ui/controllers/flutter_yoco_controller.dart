@@ -101,6 +101,12 @@ class FlutterYocoController {
       "successUrl": widget.successUrl,
       "cancelUrl": widget.cancelUrl,
       "failureUrl": widget.failureUrl,
+      "metadata": {
+        "billNote": widget.notes,
+        "customerLastName": widget.firstName,
+        "customerFirstName": widget.lastName,
+        "customerEmailAddress": widget.email,
+      },
     };
     print('Flutter_yoco: ${body}');
     dio.options.headers["Authorization"] = "Bearer ${widget.secretKey}";

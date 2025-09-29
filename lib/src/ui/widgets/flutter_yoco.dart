@@ -17,6 +17,10 @@ class FlutterYoco extends StatefulWidget {
     super.key,
     required this.secretKey,
     required this.amount,
+    required this.notes,
+    required this.firstName,
+    required this.lastName,
+    required this.email,
     required this.transactionId,
     required this.successUrl,
     required this.cancelUrl,
@@ -32,6 +36,11 @@ class FlutterYoco extends StatefulWidget {
   ///This is used as an external id on Yoco to identify the transaction
   ///
   final String transactionId;
+
+  final String notes;
+  final String firstName;
+  final String lastName;
+  final String email;
 
   ///All these urls should be from your backend
   ///
